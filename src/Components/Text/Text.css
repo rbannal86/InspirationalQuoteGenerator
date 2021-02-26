@@ -8,11 +8,12 @@
 }
 
 .text-attribution {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   font-weight: bolder;
   color: whitesmoke;
   text-shadow: 3px 3px 3px black;
-  margin-left: 2%;
+  margin-left: 0;
+  width: 100%;
   font-family: 'Gothic A1', sans-serif;
 }
 

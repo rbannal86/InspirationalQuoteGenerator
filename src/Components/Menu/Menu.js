@@ -47,9 +47,10 @@ export default function Menu({ changeSelection, width, currentSelection }) {
 
   return (
     <div
-      style={{ display: 'flex', flexDirection: 'column' }}
+      style={{ display: 'flex', flexDirection: 'column', textAlign: 'center' }}
       className="menu-main"
     >
+      <h2 className="menu-title">SELECT TEXT TEMPLATE</h2>
       <ul>{renderButtons()}</ul>
       <button className="menu-save" onClick={(e) => saveImage(e)}>
         Save Image

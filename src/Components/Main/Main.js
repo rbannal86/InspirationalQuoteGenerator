@@ -69,6 +69,7 @@ export default function Main() {
   return (
     <div className="main-main">
       <Header />
+      <h3 className="main-title">CLICK PICTURE TO CHANGE IMAGE</h3>
       <div className="main-content">
         <div
           style={{
