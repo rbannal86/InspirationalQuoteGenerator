@@ -28,14 +28,14 @@ export default function Menu({ changeSelection, width, currentSelection }) {
       let className = 'menu-selection';
       if (currentSelection === index) className = className + ' active';
       return (
-        <li>
+        <li key={index + 'li'}>
           <button
             onClick={() => changeSelection(index)}
             className={className}
             key={template[0] + template[1]}
           >
             {currentSelection === index ? (
-              <RefreshIcon fontSize={'.5rem'} />
+              <RefreshIcon fontSize={'small'} />
             ) : (
               index + 1
             )}
@@ -50,52 +50,7 @@ export default function Menu({ changeSelection, width, currentSelection }) {
       style={{ display: 'flex', flexDirection: 'column' }}
       className="menu-main"
     >
-      <ul>
-        {renderButtons()}
-        {/* <li>
-          <button
-            className="menu-selection"
-            onClick={() => changeSelection(0)}
-          >
-            1
-          </button>
-        </li>
-        <li>
-          <button className="menu-selection" onClick={() => changeSelection(1)}>
-            2
-          </button>
-        </li>
-        <li>
-          <button className="menu-selection" onClick={() => changeSelection(2)}>
-            3
-          </button>
-        </li>
-        <li>
-          <button className="menu-selection" onClick={() => changeSelection(3)}>
-            4
-          </button>
-        </li>
-        <li>
-          <button className="menu-selection" onClick={() => changeSelection(4)}>
-            5
-          </button>
-        </li>
-        <li>
-          <button className="menu-selection" onClick={() => changeSelection(5)}>
-            6
-          </button>
-        </li>
-        <li>
-          <button className="menu-selection" onClick={() => changeSelection(6)}>
-            7
-          </button>
-        </li>
-        <li>
-          <button className="menu-selection" onClick={() => changeSelection(7)}>
-            8
-          </button>
-        </li> */}
-      </ul>
+      <ul>{renderButtons()}</ul>
       <button className="menu-save" onClick={(e) => saveImage(e)}>
         Save Image
       </button>
