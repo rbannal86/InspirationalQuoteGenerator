@@ -1,0 +1,29 @@
+.main-main {
+  width: 100%;
+  margin: auto;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 750px) {
+  .main-content {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main-main {
+    width: 70%;
+  }
+}

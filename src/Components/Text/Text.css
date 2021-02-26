@@ -1,0 +1,27 @@
+.text-quote {
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  margin-left: 0;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.text-attribution {
+  font-size: 0.5rem;
+  font-weight: bolder;
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  margin-left: 2%;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+@media only screen and (min-width: 750px) {
+  .text-quote {
+    font-size: 1.1rem;
+  }
+
+  .text-attribution {
+    font-size: 0.9rem;
+  }
+}
