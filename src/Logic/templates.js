@@ -46,6 +46,16 @@ const templates = [
   'Imagine your 1 is 5 in every respect; what would it 4 like?',
   'We generate 2 while we 4. We overcome them by 1.',
   '1 is 1 having 1.',
+  "When you have 3 1, you've got to 4 it and never 4.",
+  "I can't change the 1 of the 1, but I can 4 my 2 to always reach my 1.",
+  "No matter what you're going through, there's 3 1 at the end of the 1.",
+  "Try to be 3 1 in someone else's 1.",
+  'Sometimes you will never know the 1 of 3 1, until it becomes 3 1.',
+  'The most wasted of 2 is one without 1.',
+  'You 4 what you 4.',
+  '1 changes very quickly, in a very 5 way, if you let it.',
+  "You don't always need 3 1. Sometimes you just need to 4, 4, 4, and see what happens.",
+  'My 1 in life is not merely to 4, but to 4.',
 ];
 
 export { templates, pluralNoun, noun, article, verb, adjective };
