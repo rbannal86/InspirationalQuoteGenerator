@@ -41,6 +41,11 @@ const templates = [
   'You have to 4 a lot of 2 before you find your 2.',
   "Yesterday's the 1, tomorrow's the 1, but today is 3 1. That's why it's called the 1.",
   'I would rather die of 1 than of 1.',
+  'The people who are 5 enough to think they can 4 the 1 are the ones who do.',
+  'You may encounter many 2, but you must not be 5.',
+  'Imagine your 1 is 5 in every respect; what would it 4 like?',
+  'We generate 2 while we 4. We overcome them by 1.',
+  '1 is 1 having 1.',
 ];
 
 export { templates, pluralNoun, noun, article, verb, adjective };
