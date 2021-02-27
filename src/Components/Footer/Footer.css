@@ -1,0 +1,13 @@
+.footer-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.footer-main > a {
+  margin-left: 3%;
+  margin-right: 3%;
+}

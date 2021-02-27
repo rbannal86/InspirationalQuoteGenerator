@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Image from '../Image/Image';
 import Text from '../Text/Text';
 import Menu from '../Menu/Menu';
+import Footer from '../Footer/Footer';
 
 import './Main.css';
 
@@ -37,6 +38,7 @@ export default function Main() {
           currentSelection={currentSelection}
         />
       </div>
+      <Footer />
     </div>
   );
 }
