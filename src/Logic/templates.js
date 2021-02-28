@@ -56,6 +56,16 @@ const templates = [
   '1 changes very quickly, in a very 5 way, if you let it.',
   "You don't always need 3 1. Sometimes you just need to 4, 4, 4, and see what happens.",
   'My 1 in life is not merely to 4, but to 4.',
+  "Start by doing what's 5; then do what's 5; and suddenly you are doing the 5.",
+  "Don't 4 each 1 by the 1 you 4 but by the 2 that you 4.",
+  'Change your 2 and you change your 1.',
+  'There are two ways of spreading 1: to be the 1 or the 1 that 4s it.',
+  'Put your 1, 1, and 1 into even your smallest 2. This is the secret of 1.',
+  'I am not afraid of 1, for I have seen 1 and I love 1!',
+  'No matter what people tell you, 2 and 2 can change the world.',
+  'Out of 2 grow 2.',
+  "I believe every human has a finite number of 2. I don't intend to 4 any of mine.",
+  'Let us sacrifice our 1 so that our children can have a better 1.',
 ];
 
 export { templates, pluralNoun, noun, article, verb, adjective };

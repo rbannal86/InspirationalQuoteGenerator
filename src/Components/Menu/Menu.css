@@ -4,6 +4,7 @@
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding-left: 0;
+  margin-bottom: 3%;
 }
 
 .menu-title {
@@ -13,6 +14,18 @@
 
 button {
   background-color: lightgray;
+}
+
+.menu-nav-div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+}
+
+.menu-nav-button {
+  width: 50%;
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .menu-selection {
