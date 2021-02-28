@@ -36,18 +36,19 @@ export default function Menu({ changeSelection, width, currentSelection }) {
 
     return pageSelection.map((template, index) => {
       let className = 'menu-selection';
-      if (currentSelection === index) className = className + ' active';
+      let mainIndex = templates.indexOf(template);
+      if (currentSelection === mainIndex) className = className + ' active';
       return (
         <li key={index + 'li'}>
           <button
-            onClick={() => changeSelection(templates.indexOf(template))}
+            onClick={() => changeSelection(mainIndex)}
             className={className}
             key={template[0] + template[1]}
           >
-            {currentSelection === index ? (
+            {currentSelection === mainIndex ? (
               <RefreshIcon fontSize={'small'} />
             ) : (
-              templates.indexOf(template) + 1
+              mainIndex + 1
             )}
           </button>
         </li>
