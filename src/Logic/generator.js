@@ -29,6 +29,7 @@ function fillTemplate(setText, setCurrentSelection, value) {
     // 3 is 'a' or 'an'
     // 4 is verb
     // 5 is adjective
+    // 6 is a repeated noun
     switch (word[0]) {
       case '1':
         extra = handlePunctuation(word);
@@ -37,6 +38,9 @@ function fillTemplate(setText, setCurrentSelection, value) {
           index,
           templateArr
         );
+        if (templateArr.includes('6')) {
+          templateArr[templateArr.indexOf('6')] = templateArr[index];
+        }
         break;
       case '2':
         extra = handlePunctuation(word);
@@ -47,7 +51,7 @@ function fillTemplate(setText, setCurrentSelection, value) {
         );
         break;
       case '3':
-        let nextWord = noun();
+        let nextWord = afterArticle(templateArr[index + 1]);
         extra = handlePunctuation(templateArr[index + 1]);
         templateArr[index + 1] = handleCapitalize(
           nextWord + extra,
@@ -67,6 +71,9 @@ function fillTemplate(setText, setCurrentSelection, value) {
           index,
           templateArr
         );
+        if (templateArr.includes('7')) {
+          templateArr[templateArr.indexOf('7')] = templateArr[index];
+        }
         break;
       case '5':
         extra = handlePunctuation(templateArr[index]);
@@ -82,6 +89,12 @@ function fillTemplate(setText, setCurrentSelection, value) {
 
     setText(templateArr.join(' '));
   });
+}
+
+function afterArticle(num) {
+  if (num[0] === '1') return noun();
+  if (num[0] === '2') return pluralNoun();
+  if (num[0] === '5') return adjective();
 }
 
 export { fillTemplate };

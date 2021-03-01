@@ -12,9 +12,15 @@ export default function Main() {
   const [width] = useState(Math.max(Math.floor(window.innerWidth * 0.4), 300));
   const [text, setText] = useState(null);
   const [currentSelection, setCurrentSelection] = useState(null);
+  const [random, setRandom] = useState(false);
 
   function changeSelection(value) {
     fillTemplate(setText, setCurrentSelection, value);
+  }
+
+  function randomize(num) {
+    changeSelection(num);
+    setRandom(!random);
   }
 
   return (
@@ -29,13 +35,14 @@ export default function Main() {
           }}
           id={'image-container'}
         >
-          <Image width={width} />
+          <Image width={width} random={random} />
           <Text width={width} text={text} />
         </div>
         <Menu
           changeSelection={changeSelection}
           width={width}
           currentSelection={currentSelection}
+          randomize={randomize}
         />
       </div>
       <Footer />

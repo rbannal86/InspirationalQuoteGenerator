@@ -7,7 +7,12 @@ import RefreshIcon from '@material-ui/icons/Refresh';
 
 import './Menu.css';
 
-export default function Menu({ changeSelection, width, currentSelection }) {
+export default function Menu({
+  changeSelection,
+  width,
+  currentSelection,
+  randomize,
+}) {
   const [pageNum, setPageNum] = useState(0);
 
   function handleNav(num) {
@@ -56,6 +61,12 @@ export default function Menu({ changeSelection, width, currentSelection }) {
     });
   }
 
+  function handleRandomize() {
+    let randomNum = Math.floor(Math.random() * templates.length);
+    setPageNum(Math.floor(randomNum / 15));
+    randomize(randomNum);
+  }
+
   return (
     <div
       style={{ display: 'flex', flexDirection: 'column', textAlign: 'center' }}
@@ -82,6 +93,12 @@ export default function Menu({ changeSelection, width, currentSelection }) {
 
       <button className="menu-save" onClick={(e) => saveImage(e)}>
         Save Image
+      </button>
+      <button
+        className="menu-save menu-random"
+        onClick={() => handleRandomize()}
+      >
+        Randomize
       </button>
     </div>
   );

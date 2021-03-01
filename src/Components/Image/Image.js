@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import './Image.css';
 
-export default function Image({ width }) {
+export default function Image({ width, random }) {
   const [toggle, setToggle] = useState(false);
   const [imageList, setImageList] = useState(null);
   const [imageId, setImageId] = useState(0);
@@ -45,6 +45,10 @@ export default function Image({ width }) {
     if (imageList)
       setImageId(imageList[Math.floor(Math.random() * imageList.length)].id);
   }, [imageList]);
+
+  useEffect(() => {
+    setToggle(true);
+  }, [random]);
 
   return (
     <div

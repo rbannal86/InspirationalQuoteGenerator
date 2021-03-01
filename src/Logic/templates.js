@@ -66,6 +66,16 @@ const templates = [
   'Out of 2 grow 2.',
   "I believe every human has a finite number of 2. I don't intend to 4 any of mine.",
   'Let us sacrifice our 1 so that our children can have a better 1.',
+  'From 3 5 1 3 5 1 may grow.',
+  'The most 5 thing in the 1 is, of course, the 6 itself.',
+  "We can't 4 everyone, but everyone can 7 someone.",
+  'What we 4 inwardly will 4 outer reality.',
+  '2 shape the course of 1.',
+  'There is nothing 5 to him who will 4.',
+  'God always gives His 1 to those who leave the 1 with him.',
+  'Try to be like the 1 - at ease in your own 1.',
+  'I believe that if one always looked at the 2, one would end up with 2.',
+  'Man never made any 1 as 5 as the human 1.',
 ];
 
 export { templates, pluralNoun, noun, article, verb, adjective };
