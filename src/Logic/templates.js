@@ -84,7 +84,7 @@ const templates = [
   'As 1 increases, 1 deepens.',
   '1 is the greatest gift, 1 the greatest wealth, 1 the best relationship.',
   'I arise full of 1 and 1, knowing well what 1 lies ahead of me.',
-  'Whoever is 5 will make other 8 too.',
+  'Whoever is 5 will make others 8 too.',
   '2 of our 2, of our 2 and our 2 will continue in 2.',
   'Throw your dreams into 1 like 3 1, and you do not know what it will bring back, a new 1, a new 1, a new 1, a new 1.',
   'What makes the 1 beautiful is that somewhere it hides a 1.',
