@@ -76,6 +76,21 @@ const templates = [
   'Try to be like the 1 - at ease in your own 1.',
   'I believe that if one always looked at the 2, one would end up with 2.',
   'Man never made any 1 as 5 as the human 1.',
+  'It is in your moments of 1 that your 1 is shaped.',
+  '1 is the wind, 1 the sail, and 1 the vessel.',
+  'When 2 speak, 2 are nothing.',
+  'As we 4 our 1, we must never forget that the highest 1 is not to utter 2, but to 4 by them.',
+  'In 3 5 way, you can 4 the 1.',
+  'As 1 increases, 1 deepens.',
+  '1 is the greatest gift, 1 the greatest wealth, 1 the best relationship.',
+  'I arise full of 1 and 1, knowing well what 1 lies ahead of me.',
+  'Whoever is 5 will make other 8 too.',
+  '2 of our 2, of our 2 and our 2 will continue in 2.',
+  'Throw your dreams into 1 like 3 1, and you do not know what it will bring back, a new 1, a new 1, a new 1, a new 1.',
+  'What makes the 1 beautiful is that somewhere it hides a 1.',
+  'Let your 1 lightly 4 on the 2 of Time like 1 on the tip of a 1.',
+  'The handicap of 1 is not in the 1; it is in the 1.',
+  "The only thing that ultimately matters is to 4 3 1, 4 3 1, 4 3 1, good God, now you're 5.",
 ];
 
 export { templates, pluralNoun, noun, article, verb, adjective };

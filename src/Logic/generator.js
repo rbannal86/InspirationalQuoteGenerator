@@ -82,6 +82,9 @@ function fillTemplate(setText, setCurrentSelection, value) {
           index,
           templateArr
         );
+        if (templateArr.includes('8')) {
+          templateArr[templateArr.indexOf('8')] = templateArr[index];
+        }
         break;
       default:
         break;
