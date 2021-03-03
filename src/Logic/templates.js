@@ -91,6 +91,21 @@ const templates = [
   'Let your 1 lightly 4 on the 2 of Time like 1 on the tip of a 1.',
   'The handicap of 1 is not in the 1; it is in the 1.',
   "The only thing that ultimately matters is to 4 3 1, 4 3 1, 4 3 1, good God, now you're 5.",
+  'To the 1 that is 5, the whole universe surrenders.',
+  'When we seek to 4 the 1 in others, we somehow bring out the 6 in ourselves.',
+  'One 1 is worth two 2.',
+  'God loves to 4 him who strives to 7 himself.',
+  'Your 5 1 may be right where you are now.',
+  'Lord, grant that I may always 4 more than I can 4.',
+  'Your are always free to change your 1 and choose a different 1, or a different 1.',
+  'Everyone here has the sense that right now is one of those 2 when we are influencing the 1.',
+  "Only those who have learned the power of 5 and 5 1 experience life's deepest 1: true 1.",
+  'Your heart is full of 5 2, waiting to 4.',
+  '1 is the only 1. 1 is 5.',
+  'Every 5 1 is a stepping stone toward heaven.',
+  'Plant thy 1 firmly in the 2 which His 6 has made before thee.',
+  "Every man's 1 is a fairy tale written by God's 2.",
+  'The 5 1 is in our blood and never will be 5.',
 ];
 
 export { templates, pluralNoun, noun, article, verb, adjective };
