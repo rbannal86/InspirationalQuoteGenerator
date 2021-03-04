@@ -1,4 +1,4 @@
-import { nouns } from './words';
+import { nouns, adjectives } from './words';
 import pluralize from 'pluralize';
 import whimsy from 'whimsy';
 
@@ -27,7 +27,7 @@ function verb() {
 }
 
 function adjective() {
-  return whimsy(`{{adjective}}`);
+  return adjectives[Math.floor(Math.random() * adjectives.length)];
 }
 
 const templates = [
