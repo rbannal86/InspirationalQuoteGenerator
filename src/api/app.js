@@ -3,6 +3,8 @@ import { templates } from '../Logic/templates.js';
 import { fillTemplate } from '../Logic/generator.js';
 
 const app = express();
+const server = express();
+server.use('https://www.inspiratiobot.com/api', app);
 const port = 3001;
 
 app.get('/', (req, res) => {
@@ -18,6 +20,6 @@ app.get('/api/quote', (req, res) => {
   res.send(quote);
 });
 
-app.listen(port, () => {
-  console.log('Server is listening');
+server.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
 });
