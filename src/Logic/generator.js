@@ -5,7 +5,7 @@ import {
   templates,
   verb,
   adjective,
-} from './templates';
+} from './templates.js';
 
 function handlePunctuation(word) {
   if (word.length > 1) return word[1];
@@ -20,8 +20,9 @@ function handleCapitalize(word, index, template) {
 }
 
 function fillTemplate(setText, setCurrentSelection, value) {
-  setCurrentSelection(value);
+  if (setCurrentSelection) setCurrentSelection(value);
   let templateArr = templates[value].split(' ');
+  console.log(templateArr);
   templateArr.forEach((word, index) => {
     let extra;
     // 1 is noun
@@ -90,8 +91,9 @@ function fillTemplate(setText, setCurrentSelection, value) {
         break;
     }
 
-    setText(templateArr.join(' '));
+    if (setText) setText(templateArr.join(' '));
   });
+  if (!setText) return templateArr.join(' ');
 }
 
 function afterArticle(num) {

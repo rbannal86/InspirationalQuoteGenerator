@@ -1,4 +1,4 @@
-import { nouns, adjectives } from './words';
+import { nouns, adjectives } from './words.js';
 import pluralize from 'pluralize';
 import whimsy from 'whimsy';
 
