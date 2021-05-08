@@ -1,7 +1,8 @@
-module.exports = (req, res) => {
-  const {
-    query: { quote },
-  } = req;
+import { templates } from '../../src/Logic/templates';
+import { fillTemplate } from '../../src/Logic/generator';
 
-  res.send('Spinning up a random quote!');
+// eslint-disable-next-line import/no-anonymous-default-export
+export default (_req, res) => {
+  const selection = Math.floor(Math.random() * templates.length);
+  res.send(`${fillTemplate(null, null, selection)}`);
 };
