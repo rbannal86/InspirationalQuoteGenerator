@@ -1,17 +1,22 @@
 import express from 'express';
 import { templates } from '../Logic/templates.js';
 import { fillTemplate } from '../Logic/generator.js';
+import { PORT, NODE_ENV } from './config.js';
+require('dotenv').config();
 
 const app = express();
 const server = express();
-server.use('https://www.inspiratiobot.com/api', app);
-const port = 3001;
+let url;
+if (NODE_ENV === 'development') url = 'http://localhost/api';
+else url = 'http://www.inspiratiobot.com/api';
+server.use(url, app);
+const port = PORT;
 
 app.get('/', (req, res) => {
   res.send("We're live!");
 });
 
-app.get('/api/quote', (req, res) => {
+app.get('/quote', (req, res) => {
   console.log(templates.length);
   const randomNum = Math.floor(Math.random() * templates.length);
 

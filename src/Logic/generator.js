@@ -22,7 +22,6 @@ function handleCapitalize(word, index, template) {
 function fillTemplate(setText, setCurrentSelection, value) {
   if (setCurrentSelection) setCurrentSelection(value);
   let templateArr = templates[value].split(' ');
-  console.log(templateArr);
   templateArr.forEach((word, index) => {
     let extra;
     // 1 is noun
