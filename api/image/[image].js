@@ -26,11 +26,16 @@ export default async (_req, res) => {
   }
 
   const image = await fetchImages();
-  const font = await Jimp.loadFont(Jimp.FONT_SANS_128_WHITE);
+  // const font = await Jimp.loadFont(Jimp.FONT_SANS_128_WHITE);
   const quote = getQuote();
-  const textImage = await Jimp.read(image.url).then((imageResponse) =>
-    imageResponse.print(font, 10, 10, quote)
-  );
-  console.log(textImage);
-  res.send(textImage);
+  console.log(image);
+  const body = {
+    image: image.url,
+    quote,
+  };
+  // const textImage = await Jimp.read(image.url).then((imageResponse) =>
+  //   imageResponse.print(font, 10, 10, quote)
+  // );
+  // console.log(textImage);
+  res.send(body);
 };
