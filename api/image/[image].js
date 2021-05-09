@@ -1,4 +1,3 @@
-const Jimp = require('jimp');
 const fetch = require('node-fetch');
 const { templates } = require('../../src/Logic/templates');
 const { fillTemplate } = require('../../src/Logic/generator');
@@ -26,16 +25,11 @@ export default async (_req, res) => {
   }
 
   const image = await fetchImages();
-  // const font = await Jimp.loadFont(Jimp.FONT_SANS_128_WHITE);
   const quote = getQuote();
   console.log(image);
   const body = {
-    image: image.url,
+    image,
     quote,
   };
-  // const textImage = await Jimp.read(image.url).then((imageResponse) =>
-  //   imageResponse.print(font, 10, 10, quote)
-  // );
-  // console.log(textImage);
   res.send(body);
 };
