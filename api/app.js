@@ -1,37 +1,16 @@
-// import express from 'express';
-// import { templates } from '../Logic/templates.js';
-// import { fillTemplate } from '../Logic/generator.js';
-// import { PORT, NODE_ENV } from './config.js';
+import express from 'express';
+import api from './api.js';
 // require('dotenv').config();
 
-module.exports = (req, res) => {
-  res.json({
-    body: req.body,
-    query: req.query,
-  });
-};
+const { PORT } = process.env;
 
-// const app = express();
-// const server = express();
-// let url;
-// if (NODE_ENV === 'development') url = 'http://localhost/api';
-// else url = 'http://www.inspiratiobot.com/api';
-// server.use(url, app);
-// const port = PORT;
+const app = express();
+const port = PORT || 3000;
 
-// app.get('/', (req, res) => {
-//   res.send("We're live!");
-// });
+app.use('/', express.static('build'));
 
-// app.get('/quote', (req, res) => {
-//   console.log(templates.length);
-//   const randomNum = Math.floor(Math.random() * templates.length);
+app.use('/api', api);
 
-//   const quote = fillTemplate(null, null, randomNum);
-//   console.log(quote);
-//   res.send(quote);
-// });
-
-// server.listen(port, () => {
-//   console.log(`Server is listening on port ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
