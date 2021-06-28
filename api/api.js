@@ -5,7 +5,7 @@ import { fillTemplate } from '../src/Logic/generator.js';
 // Create router for the API and handle requests to specific routes
 const api = express.Router();
 api.get('/quote', handleQuote);
-api.get('/echo', handleEcho);
+api.get('/vercel', handleEcho);
 
 /**
  * Sends back and insprirational quote
