@@ -23,3 +23,20 @@ Future Plans:
 1. More templates
 2. Replacing Whimsy with custom verb and adjective lists
 3. Google analytics integration
+
+### Building with Docker
+This section assumes you've already installed and are somewhat familiare with Docker.
+
+#### Build the Container
+To build the container from the application root, simply run the following command. The `-t` (for `tag`) is optional, but can help you remember what the image is for when running `docker images`.
+```
+docker build -t iqg/my-branch:latest .
+```
+
+#### Run the Container
+To run the container, specify the image you want and set the `--network` flag. This tells docker to share the host's (your computer's) network with the container.
+```
+docker run --network=host iqg/my-branch:latest
+```
+
+Note: this will start the container and "take over" your terminal. To kill the process, you can run `docker ps`, find the image id, then `docker kill <id>` in a separate terminal.
