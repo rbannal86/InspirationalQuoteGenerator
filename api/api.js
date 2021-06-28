@@ -3,9 +3,8 @@ import { templates } from '../src/Logic/templates.js';
 import { fillTemplate } from '../src/Logic/generator.js';
 
 // Create router for the API and handle requests to specific routes
-const api = express.Router();
+export const api = express.Router();
 api.get('/quote', handleQuote);
-api.get('/vercel', handleEcho);
 
 /**
  * Sends back and insprirational quote
@@ -22,11 +21,11 @@ function handleQuote(req, res) {
 /**
  * Echos back the body and query from the request as JSON.
  */
-function handleEcho(req, res) {
+function vercelHandler(req, res) {
   return res.json({
     body: req.body,
     query: req.query
   });
 }
 
-export default api;
+export default vercelHandler;

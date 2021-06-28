@@ -6,4 +6,4 @@ RUN cd /app && npm ci && npm run build
 
 EXPOSE 3000
 
-ENTRYPOINT cd app && node api/index.js
+ENTRYPOINT cd app && node index.js

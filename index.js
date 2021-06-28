@@ -1,5 +1,5 @@
 import express from 'express';
-import api from './api.js';
+import api from './api/api.js';
 // require('dotenv').config();
 
 const { PORT } = process.env;
