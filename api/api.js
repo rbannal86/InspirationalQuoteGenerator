@@ -4,6 +4,8 @@ import { fillTemplate } from '../src/Logic/generator.js';
 
 // Create router for the API and handle requests to specific routes
 const api = express.Router();
+// Ping route for health checks
+api.get('/ping', (req, res) => res.sendStatus(200));
 api.get('/quote', handleQuote);
 api.get('/vercel', vercelHandler);
 
